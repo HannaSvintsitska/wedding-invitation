@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wedding-invitation/static/css/main.53a3c439.css",
-    "main.js": "/wedding-invitation/static/js/main.46cb9d7a.js",
-    "static/media/first-slide.jpg": "/wedding-invitation/static/media/first-slide.2c637dcf4f754c798469.jpg",
-    "static/media/4174806.jpg": "/wedding-invitation/static/media/4174806.d24cea368623a91580da.jpg",
+    "main.css": "/wedding-invitation/static/css/main.245f76b4.css",
+    "main.js": "/wedding-invitation/static/js/main.dfafecdb.js",
+    "static/media/green-floral-frame_53876-116073.png": "/wedding-invitation/static/media/green-floral-frame_53876-116073.e8b1b043b8141ef65d0b.png",
+    "static/media/square-frame-green-golden-leaves-with-watercolor-painting_31965-94340-Edit.png": "/wedding-invitation/static/media/square-frame-green-golden-leaves-with-watercolor-painting_31965-94340-Edit.aed0c627e415a9384017.png",
+    "static/media/first-slide.jpg": "/wedding-invitation/static/media/first-slide.cff00153262d6478a6c6.jpg",
     "static/media/paper.jpeg": "/wedding-invitation/static/media/paper.4e24bd4db87863268b64.jpeg",
+    "static/media/12572881_SL-061319-20750-48.png": "/wedding-invitation/static/media/12572881_SL-061319-20750-48.968f02c1a022135847e4.png",
     "static/media/branch.png": "/wedding-invitation/static/media/branch.05ae96a41996abae34aa.png",
-    "static/media/watercolor-light-peach-background_23-2150303077.jpg": "/wedding-invitation/static/media/watercolor-light-peach-background_23-2150303077.9b59c1e60a1908d7cd3a.jpg",
     "static/media/montserrat-latin-wght-normal.woff2": "/wedding-invitation/static/media/montserrat-latin-wght-normal.5028c63f6a70ab0cf7cb.woff2",
     "static/media/pattaya-cyrillic-400-normal.woff2": "/wedding-invitation/static/media/pattaya-cyrillic-400-normal.8ccbcc809a26cacbb9fa.woff2",
     "static/media/pattaya-latin-400-normal.woff2": "/wedding-invitation/static/media/pattaya-latin-400-normal.b4e3aa8ba5b3e429f3d4.woff2",
     "static/media/pattaya-latin-ext-400-normal.woff2": "/wedding-invitation/static/media/pattaya-latin-ext-400-normal.f1a68cec36d66f01a775.woff2",
     "static/media/montserrat-latin-ext-wght-normal.woff2": "/wedding-invitation/static/media/montserrat-latin-ext-wght-normal.82d636d9375dd92118fd.woff2",
     "static/media/montserrat-cyrillic-ext-wght-normal.woff2": "/wedding-invitation/static/media/montserrat-cyrillic-ext-wght-normal.e84e812b71d18e04e692.woff2",
-    "static/media/leaves-background-with-metallic-foil-design_79603-939.png": "/wedding-invitation/static/media/leaves-background-with-metallic-foil-design_79603-939.f01364d596ded9fbde3c.png",
     "static/media/pattaya-latin-400-normal.woff": "/wedding-invitation/static/media/pattaya-latin-400-normal.a3a9b6d1443d167171d0.woff",
     "static/media/montserrat-cyrillic-wght-normal.woff2": "/wedding-invitation/static/media/montserrat-cyrillic-wght-normal.eb1783eb424871325396.woff2",
     "static/media/pattaya-cyrillic-400-normal.woff": "/wedding-invitation/static/media/pattaya-cyrillic-400-normal.e20c22f7d267f8a7a0cb.woff",
@@ -30,11 +30,11 @@
     "static/media/marck-script-latin-ext-400-normal.woff2": "/wedding-invitation/static/media/marck-script-latin-ext-400-normal.028950c95b73d9599b43.woff2",
     "static/media/pattaya-vietnamese-400-normal.woff": "/wedding-invitation/static/media/pattaya-vietnamese-400-normal.41b29d8b84c5f80ffe21.woff",
     "index.html": "/wedding-invitation/index.html",
-    "main.53a3c439.css.map": "/wedding-invitation/static/css/main.53a3c439.css.map",
-    "main.46cb9d7a.js.map": "/wedding-invitation/static/js/main.46cb9d7a.js.map"
+    "main.245f76b4.css.map": "/wedding-invitation/static/css/main.245f76b4.css.map",
+    "main.dfafecdb.js.map": "/wedding-invitation/static/js/main.dfafecdb.js.map"
   },
   "entrypoints": [
-    "static/css/main.53a3c439.css",
-    "static/js/main.46cb9d7a.js"
+    "static/css/main.245f76b4.css",
+    "static/js/main.dfafecdb.js"
   ]
 }
