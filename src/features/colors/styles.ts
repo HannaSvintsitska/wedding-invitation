@@ -1,4 +1,4 @@
-import backgroundDots from '../../img/leaves-background-with-metallic-foil-design_79603-939.png';
+import backgroundDots from '../../img/12572881_SL-061319-20750-48.png';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { CommonContainer } from 'features/styles';
@@ -10,15 +10,19 @@ export const Container = styled(CommonContainer)(({ theme }) => ({
   alignItems: 'center',
   boxSizing: 'border-box',
   position: 'relative',
+  backgroundColor: '#b0c7ad',
 }));
+
 export const ImageBackgroung = styled('div')(({ theme }) => ({
   backgroundImage: `url(${backgroundDots})`,
-  filter: 'blur(2px)',
   backgroundSize: 'cover',
+  filter: 'blur(0.7px)',
+
   backgroundPosition: 'center',
-  width: '100%',
-  height: '100vh',
   position: 'absolute',
+  boxSizing: 'border-box',
+  width: '100%',
+  height: '100%',
 }));
 
 export const ContentContainer = styled('div')(({ theme }) => ({
@@ -27,30 +31,30 @@ export const ContentContainer = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   position: 'absolute',
-  padding: '0 246px',
+  width: '50%',
 }));
 
 export const ColorContainer = styled('div')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-evenly',
-  width: '80%',
+  width: '75%',
   height: 50,
   marginTop: 40,
 }));
 
 export const StyledText = styled(Typography)(({ theme }) => ({
-  fontSize: 90,
+  fontSize: 73,
   fontWeight: 600,
-  color: 'rgb(176, 146, 89)',
+  // color: 'rgb(176, 146, 89)',
   fontFamily: 'Marck Script, sans-serif',
 }));
 
 export const StyledTextInfo = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
-  fontSize: 40,
+  fontSize: 41,
   fontWeight: 600,
-  color: 'rgb(176, 146, 89)',
+  // color: 'rgb(176, 146, 89)',
   fontFamily: 'Marck Script, sans-serif',
 }));
 

@@ -20,17 +20,17 @@ export const ButtonsContainer = styled('div')(({ theme }) => ({
 }));
 
 export const StyledButton = styled(Button)(({ theme }) => ({
-  color: 'white',
+  color: 'black',
   fontSize: 40,
   fontWeight: 500,
   fontFamily: 'Marck Script, sans-serif',
   margin: '10px 30px',
   minWidth: '120px',
-  border: 'white solid 5px',
+  border: 'black solid 3px',
   borderRadius: '10px',
   height: 70,
   '&:hover': {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     color: '#b0c7ad',
   },
 }));

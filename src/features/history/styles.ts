@@ -14,9 +14,9 @@ export const Container = styled(CommonContainer)(({ theme }) => ({
 
 export const StyledContainerPaper = styled('div')(({ theme }) => ({
   backgroundImage: `url(${imagePaper})`,
-  backgroundPosition: 'center',
+  // backgroundPosition: 'center',
   backgroundSize: 'cover',
-  width: '40%',
+  width: '48%',
   height: '70%',
   display: 'flex',
   flexDirection: 'column',
@@ -27,7 +27,7 @@ export const StyledContainerPaper = styled('div')(({ theme }) => ({
 
 export const StyledTextHistory = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
-  fontSize: 32,
+  fontSize: 41,
   fontWeight: 600,
   fontFamily: 'Marck Script, sans-serif',
 }));

@@ -21,8 +21,8 @@ const Colors: FC<MainProps> = ({ innerRef }) => {
       <ContentContainer>
         <StyledText>Кольори весілля</StyledText>
         <StyledTextInfo>
-          Також хочемо повідомити, що на весіллі буде кольорова гамма, тому
-          просимо вас обирати свої наряди в цих відтінках
+          На весіллі буде кольорова гамма, тому просимо вас обирати свої наряди
+          в цих відтінках
         </StyledTextInfo>
         <ColorContainer>
           {COLORS.map((el, index) => (

@@ -1,4 +1,4 @@
-import backgroundGoldFoil from 'img/4174806.jpg';
+import backgroundGoldFoil from 'img/green-floral-frame_53876-116073.png';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { CommonContainer } from 'features/styles';
@@ -9,25 +9,33 @@ export const Container = styled(CommonContainer)(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-}));
-export const ImageBackgroung = styled('div')(({ theme }) => ({
-  backgroundImage: `url(${backgroundGoldFoil})`,
-  filter: 'blur(2px)',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  width: '100%',
-  height: '100vh',
+  backgroundColor: '#efeeea',
 }));
 
 export const ContainerAllText = styled('div')(({ theme }) => ({
-  position: 'absolute',
+  backgroundImage: `url(${backgroundGoldFoil})`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  position: 'relative',
+  height: '100vh',
+  width: '72%',
+}));
+
+export const ContainerText = styled('div')(({ theme }) => ({
+  position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  height: '100%',
 }));
 
 export const StyledText = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
-  fontSize: 90,
-  fontWeight: 500,
-  color: 'rgb(176, 146, 89)',
+  fontSize: 73,
+  fontWeight: 600,
+  // color: 'rgb(176, 146, 89)',
   fontFamily: 'Marck Script, sans-serif',
 }));
 
@@ -36,11 +44,11 @@ export const ContainerWhenWhere = styled('div')(({ theme }) => ({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  minWidth: '342px',
+  minWidth: '249px',
 }));
 
 export const StyledTextSmaller = styled(StyledText)(({ theme }) => ({
-  fontSize: 48,
+  fontSize: 41,
 }));
 
 export const ContainerDetails = styled('div')(({ theme }) => ({
