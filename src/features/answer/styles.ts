@@ -10,7 +10,7 @@ export const Container = styled(CommonContainer)(({ theme }) => ({
 }));
 
 export const StyledText = styled(Typography)(({ theme }) => ({
-  fontSize: 40,
+  fontSize: '3em',
   fontWeight: 600,
   fontFamily: 'Marck Script, sans-serif',
 }));
@@ -21,7 +21,7 @@ export const ButtonsContainer = styled('div')(({ theme }) => ({
 
 export const StyledButton = styled(Button)(({ theme }) => ({
   color: 'black',
-  fontSize: 40,
+  fontSize: '3em',
   fontWeight: 500,
   fontFamily: 'Marck Script, sans-serif',
   margin: '10px 30px',

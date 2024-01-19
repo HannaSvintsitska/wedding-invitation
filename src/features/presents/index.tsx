@@ -18,7 +18,7 @@ const Presents: FC<MainProps> = ({ innerRef }) => {
       <ContainerContent>
         <StyledTextTitle>Подарунки</StyledTextTitle>
         <StyledTextInfo>
-          Найкращий подарунок - гроші :)<br></br>Проте якщо у вас є краща ідея -
+          Найкращий подарунок - гроші<br></br>Проте якщо у вас є краща ідея -
           будемо раді отримати і щось інше.
         </StyledTextInfo>
       </ContainerContent>

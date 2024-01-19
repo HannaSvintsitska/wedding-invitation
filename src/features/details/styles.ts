@@ -14,12 +14,12 @@ export const Container = styled(CommonContainer)(({ theme }) => ({
 
 export const ContainerAllText = styled('div')(({ theme }) => ({
   backgroundImage: `url(${backgroundGoldFoil})`,
-  backgroundSize: 'cover',
+  backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   position: 'relative',
   height: '100vh',
-  width: '72%',
+  width: '84%',
 }));
 
 export const ContainerText = styled('div')(({ theme }) => ({
@@ -33,7 +33,7 @@ export const ContainerText = styled('div')(({ theme }) => ({
 
 export const StyledText = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
-  fontSize: 73,
+  fontSize: '3em',
   fontWeight: 600,
   // color: 'rgb(176, 146, 89)',
   fontFamily: 'Marck Script, sans-serif',
@@ -48,7 +48,7 @@ export const ContainerWhenWhere = styled('div')(({ theme }) => ({
 }));
 
 export const StyledTextSmaller = styled(StyledText)(({ theme }) => ({
-  fontSize: 41,
+  fontSize: '2.3em',
 }));
 
 export const ContainerDetails = styled('div')(({ theme }) => ({

@@ -27,7 +27,7 @@ export const StyledContainerPaper = styled('div')(({ theme }) => ({
 
 export const StyledTextHistory = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
-  fontSize: 41,
+  fontSize: '2.3em',
   fontWeight: 600,
   fontFamily: 'Marck Script, sans-serif',
 }));
