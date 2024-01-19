@@ -4,6 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import '@fontsource-variable/montserrat';
 import '@fontsource/marck-script';
 import '@fontsource/pattaya';
+import useScrollByScreen from "useScrollByScreen";
 
 const customTheme = createTheme({
   typography: {
@@ -12,9 +13,11 @@ const customTheme = createTheme({
 });
 
 function App() {
+    const [appRef, handleScroll] = useScrollByScreen();
+
   return (
     <ThemeProvider theme={customTheme}>
-      <div className="App">
+      <div id='app' ref={appRef} className="App" onScroll={handleScroll}>
         <Features />
       </div>
     </ThemeProvider>
