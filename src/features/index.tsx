@@ -22,7 +22,7 @@ const Features = () => {
   const memoizedRefs = useMemo(() => sectionRefs, []);
   const { currentElementIndexInViewport } = useScrollspy({
     sectionRefs: memoizedRefs,
-    rootSelector: '#scrollRoot',
+    rootSelector: '#app',
   });
 
   return (
