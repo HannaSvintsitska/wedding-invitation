@@ -18,7 +18,7 @@ const AppContainer = styled('div')(({ theme: { breakpoints }}) => ({
     fontSize: '0.3em',
   },
   [breakpoints.down('md')]: {
-    fontSize: '0.6em',
+    fontSize: '0.5em',
   },
   [breakpoints.up('lg')]: {
     fontSize: '1.3em',
