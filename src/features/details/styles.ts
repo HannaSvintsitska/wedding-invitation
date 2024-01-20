@@ -1,14 +1,11 @@
 import backgroundGoldFoil from 'img/green-floral-frame_53876-116073.png';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/system';
-import { CommonContainer } from 'features/styles';
+import { CommonScreenContainer } from 'features/styles';
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 
-export const Container = styled(CommonContainer)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  position: 'relative',
+export const Container = styled(CommonScreenContainer)(({ theme }) => ({
   backgroundColor: '#efeeea',
 }));
 
@@ -41,10 +38,18 @@ export const StyledText = styled(Typography)(({ theme }) => ({
 
 export const ContainerWhenWhere = styled('div')(({ theme }) => ({
   display: 'flex',
+  width: '50%',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  minWidth: '249px',
+}));
+
+
+export const Image = styled('img')(({ theme }) => ({
+  display: 'flex',
+  position: 'absolute',
+  width: '5em',
+  height: '5em',
 }));
 
 export const StyledTextSmaller = styled(StyledText)(({ theme }) => ({
@@ -53,6 +58,17 @@ export const StyledTextSmaller = styled(StyledText)(({ theme }) => ({
 
 export const ContainerDetails = styled('div')(({ theme }) => ({
   display: 'flex',
-  justifyContent: 'center',
+  width: '70%',
   alignItems: 'center',
+  justifyContent: 'center',
 }));
+
+export const StyledAccessTimeIcon = styled(AccessTimeIcon)({
+  fontSize: '2em',
+  color: 'rgb(176, 146, 89)',
+});
+
+export const StyledPlaceOutlinedIcon = styled(PlaceOutlinedIcon)({
+  fontSize: '2em',
+  color: 'rgb(176, 146, 89)',
+});

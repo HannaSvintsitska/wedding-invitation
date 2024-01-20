@@ -1,7 +1,7 @@
 import { Button, Typography, styled } from '@mui/material';
-import { CommonContainer } from 'features/styles';
+import { CommonScreenContainer } from 'features/styles';
 
-export const Container = styled(CommonContainer)(({ theme }) => ({
+export const Container = styled(CommonScreenContainer)(({ theme }) => ({
   backgroundColor: '#b0c7ad',
   display: 'flex',
   flexDirection: 'column',

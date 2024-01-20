@@ -1,14 +1,18 @@
 import { Typography, styled } from '@mui/material';
-import { CommonContainer } from 'features/styles';
+import { CommonScreenContainer } from 'features/styles';
 import background from 'img/first-slide.jpg';
+import backgroundMobile from 'img/first-slide-mobile.png';
 
-export const ImageBackgroung = styled(CommonContainer)(({ theme }) => ({
+export const ImageBackgroung = styled(CommonScreenContainer)(({ theme }) => ({
   backgroundImage: `url(${background})`,
-  backgroundPosition: 'center',
+  backgroundPosition: 'right',
   backgroundSize: 'cover',
   filter: 'blur(1.2px)',
   boxSizing: 'border-box',
   position: 'absolute',
+  [theme.breakpoints.down('md')]: {
+    backgroundImage: `url(${backgroundMobile})`,
+  },
 }));
 
 export const StyledText = styled(Typography)(({ theme }) => ({
@@ -18,7 +22,7 @@ export const StyledText = styled(Typography)(({ theme }) => ({
   fontFamily: 'Marck Script, sans-serif',
 }));
 
-export const ContainerMain = styled(CommonContainer)(({ theme }) => ({
+export const ContainerMain = styled(CommonScreenContainer)(({ theme }) => ({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'flex-start',
@@ -33,4 +37,18 @@ export const TextContainer = styled('div')(({ theme }) => ({
   alignItems: 'flex-start',
   boxSizing: 'border-box',
   position: 'relative',
+}));
+
+export const NamesText = styled(StyledText)(({ theme: { breakpoints }}) => ({
+  fontSize: '6em',
+  [breakpoints.down('sm')]: {
+    fontSize: '8em',
+  }
+}));
+
+export const MainText = styled(StyledText)(({ theme: { breakpoints }}) => ({
+  fontSize: '2em',
+  [breakpoints.down('sm')]: {
+    fontSize: '3em',
+  }
 }));

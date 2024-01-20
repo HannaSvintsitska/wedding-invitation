@@ -1,8 +1,8 @@
 import { Typography, styled } from '@mui/material';
-import { CommonContainer } from 'features/styles';
+import { CommonScreenContainer } from 'features/styles';
 import backgroundGreen from 'img/square-frame-green-golden-leaves-with-watercolor-painting_31965-94340-Edit.png';
 
-export const Container = styled(CommonContainer)(({ theme }) => ({
+export const Container = styled(CommonScreenContainer)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

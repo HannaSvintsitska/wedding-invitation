@@ -1,6 +1,6 @@
 import './App.css';
 import Features from './features';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme, styled } from '@mui/material';
 import '@fontsource-variable/montserrat';
 import '@fontsource/marck-script';
 import '@fontsource/pattaya';
@@ -13,18 +13,30 @@ const customTheme = createTheme({
   },
 });
 
+const AppContainer = styled('div')(({ theme: { breakpoints }}) => ({
+  [breakpoints.down('sm')]: {
+    fontSize: '0.3em',
+  },
+  [breakpoints.down('md')]: {
+    fontSize: '0.6em',
+  },
+  [breakpoints.up('lg')]: {
+    fontSize: '1.3em',
+  },
+}));
+
 function App() {
   const [appRef, handleScroll] = useScrollByScreen();
 
   return (
     <ThemeProvider theme={customTheme}>
-      <div id="app" ref={appRef} className="App" onScroll={handleScroll}>
+      <AppContainer id="app" ref={appRef} className="App" onScroll={handleScroll}>
         <Router>
           <Routes>
             <Route path="/:id" element={<Features />}></Route>
           </Routes>
         </Router>
-      </div>
+      </AppContainer>
     </ThemeProvider>
   );
 }
