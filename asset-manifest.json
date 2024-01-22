@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/wedding-invitation/static/css/main.245f76b4.css",
-    "main.js": "/wedding-invitation/static/js/main.dfafecdb.js",
+    "main.js": "/wedding-invitation/static/js/main.c7771fc6.js",
+    "static/media/first-slide-mobile.png": "/wedding-invitation/static/media/first-slide-mobile.928fd1e40e04745e23bc.png",
     "static/media/green-floral-frame_53876-116073.png": "/wedding-invitation/static/media/green-floral-frame_53876-116073.e8b1b043b8141ef65d0b.png",
     "static/media/square-frame-green-golden-leaves-with-watercolor-painting_31965-94340-Edit.png": "/wedding-invitation/static/media/square-frame-green-golden-leaves-with-watercolor-painting_31965-94340-Edit.aed0c627e415a9384017.png",
     "static/media/first-slide.jpg": "/wedding-invitation/static/media/first-slide.cff00153262d6478a6c6.jpg",
@@ -31,10 +32,10 @@
     "static/media/pattaya-vietnamese-400-normal.woff": "/wedding-invitation/static/media/pattaya-vietnamese-400-normal.41b29d8b84c5f80ffe21.woff",
     "index.html": "/wedding-invitation/index.html",
     "main.245f76b4.css.map": "/wedding-invitation/static/css/main.245f76b4.css.map",
-    "main.dfafecdb.js.map": "/wedding-invitation/static/js/main.dfafecdb.js.map"
+    "main.c7771fc6.js.map": "/wedding-invitation/static/js/main.c7771fc6.js.map"
   },
   "entrypoints": [
     "static/css/main.245f76b4.css",
-    "static/js/main.dfafecdb.js"
+    "static/js/main.c7771fc6.js"
   ]
 }
