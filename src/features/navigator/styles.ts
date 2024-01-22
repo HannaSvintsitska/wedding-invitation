@@ -45,4 +45,7 @@ export const NavigatorContainer = styled('div')(({ theme }) => ({
   flexDirection: 'column',
   zIndex: 1,
   display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+        display: 'none',
+    }
 }));

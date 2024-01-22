@@ -6,12 +6,16 @@ import {
   StyledTextHistory,
   TextContainer,
 } from './styles';
+import { NAMES } from "features/utils";
+import { useParams } from "react-router";
 
 interface MainProps {
   innerRef: RefObject<HTMLDivElement>;
 }
 
 const History: FC<MainProps> = ({ innerRef }) => {
+  const { id = '' } = useParams();
+
   return (
     <Container id="history" ref={innerRef}>
       <ImageBranches />
@@ -19,7 +23,7 @@ const History: FC<MainProps> = ({ innerRef }) => {
         <TextContainer>
           <StyledTextHistory>
             Ми з Антоном створюємо сімʼю (:
-            <br />І тому ми запрошуємо вас розділити цей визначний та
+            <br />І тому ми запрошуємо вас, {NAMES[id]}, розділити цей визначний та
             по-спражньому особливий для нас день.
           </StyledTextHistory>
         </TextContainer>

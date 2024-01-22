@@ -4,7 +4,7 @@ import {
   ColorsCircle,
   Container,
   ContentContainer,
-  ImageBackgroung,
+  CardContainer,
   StyledText,
   StyledTextInfo,
 } from './styles';
@@ -17,19 +17,20 @@ interface MainProps {
 const Colors: FC<MainProps> = ({ innerRef }) => {
   return (
     <Container id="colors" ref={innerRef}>
-      <ImageBackgroung />
-      <ContentContainer>
-        <StyledText>Кольори весілля</StyledText>
-        <StyledTextInfo>
-          На весіллі буде кольорова гамма, тому просимо вас обирати свої наряди
-          в цих відтінках
-        </StyledTextInfo>
-        <ColorContainer>
-          {COLORS.map((el, index) => (
-            <ColorsCircle color={el} key={index} />
-          ))}
-        </ColorContainer>
-      </ContentContainer>
+        <CardContainer>
+          <ContentContainer>
+            <StyledText>Кольори весілля</StyledText>
+            <StyledTextInfo>
+              На весіллі буде кольорова гамма, тому просимо вас обирати свої наряди
+              в цих відтінках
+            </StyledTextInfo>
+            <ColorContainer>
+              {COLORS.map((el, index) => (
+                  <ColorsCircle color={el} key={index} />
+              ))}
+            </ColorContainer>
+          </ContentContainer>
+        </CardContainer>
     </Container>
   );
 };

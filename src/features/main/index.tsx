@@ -1,9 +1,10 @@
 import { RefObject, FC } from 'react';
 import {
-  ContainerMain,
-  ImageBackgroung,
-  StyledText,
-  TextContainer,
+    ContainerMain,
+    ImageBackgroung,
+    MainText,
+    NamesText,
+    TextContainer,
 } from './styles';
 
 interface MainProps {
@@ -15,10 +16,10 @@ const Main: FC<MainProps> = ({ innerRef }) => {
     <ContainerMain id="main" ref={innerRef}>
       <ImageBackgroung />
       <TextContainer>
-        <StyledText variant="h1">Антон і Аня</StyledText>
-        <StyledText variant="h4">
+        <NamesText>Антон і Аня</NamesText>
+        <MainText>
           4-го травня 2024 р., 13:00 | Кожумʼяцька 16В
-        </StyledText>
+        </MainText>
       </TextContainer>
     </ContainerMain>
   );
