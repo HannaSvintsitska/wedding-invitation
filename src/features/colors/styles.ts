@@ -7,9 +7,14 @@ export const Container = styled(CommonScreenContainer)(({ theme }) => ({
   backgroundColor: '#b0c7ad',
 }));
 
-export const CardContainer = styled(CommonContentContainer)(() => ({
-  backgroundImage: `url(${backgroundDots})`,
-}));
+export const CardContainer = styled(CommonContentContainer)(
+  ({ theme: { breakpoints } }) => ({
+    backgroundImage: `url(${backgroundDots})`,
+    [breakpoints.up('md')]: {
+      backgroundSize: 'cover',
+    },
+  })
+);
 
 export const ContentContainer = styled(CommonContentContainer)(({ theme }) => ({
   width: '36%',

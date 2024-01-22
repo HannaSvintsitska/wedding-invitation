@@ -2,8 +2,8 @@ import backgroundGoldFoil from 'img/green-floral-frame_53876-116073.png';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { CommonScreenContainer } from 'features/styles';
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 
 export const Container = styled(CommonScreenContainer)(({ theme }) => ({
   backgroundColor: '#efeeea',
@@ -16,7 +16,7 @@ export const ContainerAllText = styled('div')(({ theme }) => ({
   backgroundPosition: 'center',
   position: 'relative',
   height: '100vh',
-  width: '84%',
+  width: '76%',
 }));
 
 export const ContainerText = styled('div')(({ theme }) => ({
@@ -43,7 +43,6 @@ export const ContainerWhenWhere = styled('div')(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
 }));
-
 
 export const Image = styled('img')(({ theme }) => ({
   display: 'flex',

@@ -12,6 +12,7 @@ export const ImageBackgroung = styled(CommonScreenContainer)(({ theme }) => ({
   position: 'absolute',
   [theme.breakpoints.down('md')]: {
     backgroundImage: `url(${backgroundMobile})`,
+    backgroundPosition: 'top center',
   },
 }));
 
@@ -39,16 +40,16 @@ export const TextContainer = styled('div')(({ theme }) => ({
   position: 'relative',
 }));
 
-export const NamesText = styled(StyledText)(({ theme: { breakpoints }}) => ({
+export const NamesText = styled(StyledText)(({ theme: { breakpoints } }) => ({
   fontSize: '6em',
   [breakpoints.down('sm')]: {
     fontSize: '8em',
-  }
+  },
 }));
 
-export const MainText = styled(StyledText)(({ theme: { breakpoints }}) => ({
+export const MainText = styled(StyledText)(({ theme: { breakpoints } }) => ({
   fontSize: '2em',
   [breakpoints.down('sm')]: {
     fontSize: '3em',
-  }
+  },
 }));

@@ -14,11 +14,17 @@ const customTheme = createTheme({
 });
 
 const AppContainer = styled('div')(({ theme: { breakpoints } }) => ({
-  [breakpoints.down('sm')]: {
+  [breakpoints.up('xs')]: {
     fontSize: '0.3em',
   },
-  [breakpoints.down('md')]: {
-    fontSize: '0.5em',
+  [breakpoints.up('sm')]: {
+    fontSize: '0.6em',
+  },
+  [breakpoints.up('md')]: {
+    fontSize: '0.7em',
+  },
+  [breakpoints.up('lg')]: {
+    fontSize: '1em',
   },
   [breakpoints.up('xl')]: {
     fontSize: '1.3em',
