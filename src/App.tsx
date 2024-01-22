@@ -13,14 +13,14 @@ const customTheme = createTheme({
   },
 });
 
-const AppContainer = styled('div')(({ theme: { breakpoints }}) => ({
+const AppContainer = styled('div')(({ theme: { breakpoints } }) => ({
   [breakpoints.down('sm')]: {
     fontSize: '0.3em',
   },
   [breakpoints.down('md')]: {
     fontSize: '0.5em',
   },
-  [breakpoints.up('lg')]: {
+  [breakpoints.up('xl')]: {
     fontSize: '1.3em',
   },
 }));
@@ -30,7 +30,12 @@ function App() {
 
   return (
     <ThemeProvider theme={customTheme}>
-      <AppContainer id="app" ref={appRef} className="App" onScroll={handleScroll}>
+      <AppContainer
+        id="app"
+        ref={appRef}
+        className="App"
+        onScroll={handleScroll}
+      >
         <Router>
           <Routes>
             <Route path="/:id" element={<Features />}></Route>
