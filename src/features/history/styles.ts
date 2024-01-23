@@ -28,7 +28,7 @@ export const StyledContainerPaper = styled('div')(
       width: '66%',
     },
     [breakpoints.down('sm')]: {
-      height: '49%',
+      height: '53%',
     },
     [breakpoints.up('md')]: {
       width: '46%',
@@ -62,9 +62,6 @@ export const ImageBranches = styled('div')(({ theme: { breakpoints } }) => ({
   height: '100vh',
   display: 'flex',
   alignItems: 'center',
-  [breakpoints.down('sm')]: {
-    width: '70%',
-  },
 
   '&::before': {
     content: `""`,
@@ -77,6 +74,7 @@ export const ImageBranches = styled('div')(({ theme: { breakpoints } }) => ({
     height: '90vh',
     [breakpoints.up('md')]: {
       height: '69vh',
+      width: '50%',
     },
   },
   '&::after': {
@@ -89,6 +87,7 @@ export const ImageBranches = styled('div')(({ theme: { breakpoints } }) => ({
     height: '90vh',
     [breakpoints.up('md')]: {
       height: '69vh',
+      width: '50%',
     },
   },
 }));
