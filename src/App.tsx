@@ -1,27 +1,32 @@
 import './App.css';
 import Features from './features';
-import { ThemeProvider, createTheme, styled } from '@mui/material';
-import '@fontsource-variable/montserrat';
+import {
+  CircularProgress,
+  ThemeProvider,
+  createTheme,
+  styled,
+} from '@mui/material';
 import '@fontsource/marck-script';
 import '@fontsource/pattaya';
 import useScrollByScreen from 'useScrollByScreen';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Suspense } from 'react';
 
 const customTheme = createTheme({
   typography: {
-    fontFamily: 'Montserrat Variable, sans-serif',
+    fontFamily: 'Marck Script, sans-serif',
   },
 });
 
 const AppContainer = styled('div')(({ theme: { breakpoints } }) => ({
   [breakpoints.up('xs')]: {
-    fontSize: '0.3em',
-  },
-  [breakpoints.up('sm')]: {
     fontSize: '0.6em',
   },
-  [breakpoints.up('md')]: {
+  [breakpoints.up('sm')]: {
     fontSize: '0.7em',
+  },
+  [breakpoints.up('md')]: {
+    fontSize: '1em',
   },
   [breakpoints.up('lg')]: {
     fontSize: '1em',
@@ -30,6 +35,9 @@ const AppContainer = styled('div')(({ theme: { breakpoints } }) => ({
     fontSize: '1.3em',
   },
 }));
+function Loading() {
+  return <h2>🌀 Loading...</h2>;
+}
 
 function App() {
   const [appRef, handleScroll] = useScrollByScreen();

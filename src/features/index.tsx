@@ -1,4 +1,4 @@
-import { useRef, useMemo } from 'react';
+import { useRef, useMemo, Suspense } from 'react';
 import Main from './main';
 import History from './history';
 import Details from './details';
@@ -10,6 +10,7 @@ import Navigator from './navigator';
 import Colors from './colors';
 import { useParams } from 'react-router';
 import { NAMES } from 'features/utils';
+import { CircularProgress } from '@mui/material';
 
 const Features = () => {
   const sectionRefs = [
@@ -30,7 +31,6 @@ const Features = () => {
   const { id = '' } = useParams();
 
   if (!id || !NAMES[id]) {
-    console.log(id);
     return null;
   }
 

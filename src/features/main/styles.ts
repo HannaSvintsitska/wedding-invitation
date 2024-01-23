@@ -1,7 +1,7 @@
 import { Typography, styled } from '@mui/material';
 import { CommonScreenContainer } from 'features/styles';
 import background from 'img/first-slide.jpg';
-import backgroundMobile from 'img/first-slide-mobile.png';
+import backgroundMobile from 'img/first-slide-mobile.jpg';
 
 export const ImageBackgroung = styled(CommonScreenContainer)(({ theme }) => ({
   backgroundImage: `url(${background})`,
@@ -20,7 +20,9 @@ export const StyledText = styled(Typography)(({ theme }) => ({
   padding: theme.spacing(0, 0, 0, 9),
   color: 'white',
   fontWeight: 600,
-  fontFamily: 'Marck Script, sans-serif',
+  [theme.breakpoints.down('md')]: {
+    padding: 10,
+  },
 }));
 
 export const ContainerMain = styled(CommonScreenContainer)(({ theme }) => ({

@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/comfortaa": "^5.0.18",
     "@fontsource-variable/montserrat": "^5.0.16",
     "@fontsource/marck-script": "^5.0.17",
     "@fontsource/pattaya": "^5.0.17",

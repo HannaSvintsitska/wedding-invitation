@@ -1,4 +1,5 @@
-import backgroundDots from '../../img/12572881_SL-061319-20750-48.png';
+import backgroundDots from '../../img/12572881_SL-061319-20750-48-original.png';
+import backgroundFrameRotated from '../../img/12572881_SL-061319-20750-48.png';
 import { Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import { CommonContentContainer, CommonScreenContainer } from 'features/styles';
@@ -10,23 +11,36 @@ export const Container = styled(CommonScreenContainer)(({ theme }) => ({
 export const CardContainer = styled(CommonContentContainer)(
   ({ theme: { breakpoints } }) => ({
     backgroundImage: `url(${backgroundDots})`,
+    [breakpoints.down('sm')]: {
+      backgroundImage: `url(${backgroundFrameRotated})`,
+    },
+
+    [breakpoints.down('md')]: {
+      width: '100%',
+      // backgroundSize: 'contain',
+    },
     [breakpoints.up('md')]: {
       backgroundSize: 'cover',
+      width: '86%',
     },
   })
 );
 
-export const ContentContainer = styled(CommonContentContainer)(({ theme }) => ({
-  width: '36%',
-  height: '40%',
-}));
+export const ContentContainer = styled(CommonContentContainer)(
+  ({ theme: { breakpoints } }) => ({
+    width: '36%',
+    height: '40%',
+    [breakpoints.down('md')]: {
+      width: '57%',
+    },
+  })
+);
 
 export const StyledText = styled(Typography)(({ theme }) => ({
   display: 'flex',
   fontSize: '3em',
   fontWeight: 600,
   // color: 'rgb(176, 146, 89)',
-  fontFamily: 'Marck Script, sans-serif',
 }));
 
 export const StyledTextInfo = styled(Typography)(({ theme }) => ({
@@ -36,7 +50,6 @@ export const StyledTextInfo = styled(Typography)(({ theme }) => ({
   lineHeight: '1.15em',
   fontWeight: 600,
   // color: 'rgb(176, 146, 89)',
-  fontFamily: 'Marck Script, sans-serif',
 }));
 
 export const ColorContainer = styled('div')(({ theme }) => ({

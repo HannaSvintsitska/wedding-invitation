@@ -1,6 +1,6 @@
 import { Typography, styled } from '@mui/material';
 import { CommonScreenContainer } from 'features/styles';
-import imagePaper from '../../img/paper.jpeg';
+import imagePaper from '../../img/paper.jpg';
 import branch from '../../img/branch.png';
 
 export const Container = styled(CommonScreenContainer)(({ theme }) => ({
@@ -12,29 +12,39 @@ export const Container = styled(CommonScreenContainer)(({ theme }) => ({
   height: '100vh',
 }));
 
-export const StyledContainerPaper = styled('div')(({ theme }) => ({
-  backgroundImage: `url(${imagePaper})`,
-  // backgroundPosition: 'center',
-  backgroundSize: 'cover',
-  width: '48%',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  padding: '0 30px',
-
-  ':before': {
-    content: '""',
-    display: 'block',
-    paddingTop: '80%',
-  },
-}));
+export const StyledContainerPaper = styled('div')(
+  ({ theme: { breakpoints } }) => ({
+    backgroundImage: `url(${imagePaper})`,
+    // backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    width: '48%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '0 30px',
+    [breakpoints.up('xs')]: {
+      height: '59%',
+      width: '66%',
+    },
+    [breakpoints.down('sm')]: {
+      height: '49%',
+    },
+    [breakpoints.up('md')]: {
+      width: '46%',
+    },
+    ':before': {
+      content: '""',
+      display: 'block',
+      paddingTop: '80%',
+    },
+  })
+);
 
 export const StyledTextHistory = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
   fontSize: '2.3em',
   fontWeight: 600,
-  fontFamily: 'Marck Script, sans-serif',
 }));
 
 export const TextContainer = styled('div')(({ theme }) => ({
@@ -46,12 +56,13 @@ export const TextContainer = styled('div')(({ theme }) => ({
   alignItems: 'center',
 }));
 
-export const ImageBranches = styled('div')(({ theme }) => ({
+export const ImageBranches = styled('div')(({ theme: { breakpoints } }) => ({
   position: 'absolute',
   width: '100%',
   height: '100vh',
   display: 'flex',
-  [theme.breakpoints.down('sm')]: {
+  alignItems: 'center',
+  [breakpoints.down('sm')]: {
     width: '70%',
   },
 
@@ -61,9 +72,12 @@ export const ImageBranches = styled('div')(({ theme }) => ({
     backgroundSize: 'contain',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    transform: 'rotateY(0.5turn) translate(55px, 36px)',
+    transform: 'rotateY(0.5turn)',
     width: '100%',
     height: '90vh',
+    [breakpoints.up('md')]: {
+      height: '69vh',
+    },
   },
   '&::after': {
     content: `""`,
@@ -71,8 +85,10 @@ export const ImageBranches = styled('div')(({ theme }) => ({
     backgroundSize: 'contain',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    transform: ' translate(55px, 36px)',
     width: '100%',
     height: '90vh',
+    [breakpoints.up('md')]: {
+      height: '69vh',
+    },
   },
 }));

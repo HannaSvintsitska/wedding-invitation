@@ -16,7 +16,7 @@ export const NAMES: Record<string, string> = {
   phfhsw: 'Вадим, Надя і Соломійка',
   vdasnf: 'Саша та Філіпп',
   lcxgiw: 'Дядя Саша і Тьотя Галя',
-  efdofo: 'Ксюша і Олексій',
+  efdofo: 'Ксюша',
   wdwlwd: 'Іван та Поліна',
   tieodj: 'Даша',
 };
