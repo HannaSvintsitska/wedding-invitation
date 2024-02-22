@@ -1,4 +1,4 @@
-import { useRef, useMemo, Suspense } from 'react';
+import { useRef, useMemo } from 'react';
 import Main from './main';
 import History from './history';
 import Details from './details';
@@ -9,8 +9,6 @@ import { useScrollspy } from '@makotot/ghostui';
 import Navigator from './navigator';
 import Colors from './colors';
 import { useParams } from 'react-router';
-import { NAMES } from 'features/utils';
-import { CircularProgress } from '@mui/material';
 
 const Features = () => {
   const sectionRefs = [
@@ -27,12 +25,6 @@ const Features = () => {
     sectionRefs: memoizedRefs,
     rootSelector: '#app',
   });
-
-  const { id = '' } = useParams();
-
-  if (!id || !NAMES[id]) {
-    return null;
-  }
 
   return (
     <>
